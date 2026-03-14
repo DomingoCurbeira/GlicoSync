@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  /* Definimos los colores corporativos de GlicoSync */
+  --color-glico-dark: #020617;
+  --color-glico-blue: #38bdf8;
+  --color-glico-green: #22c55e;
+  --color-glico-red: #ef4444;
+  --color-glico-indigo: #6366f1;
+}
+
+@import "tailwindcss";
+
+/* Ahora sí, puedes poner comentarios y el resto del código aquí abajo */
+@theme {
+  --color-glico-dark: #020617;
+  --color-glico-blue: #38bdf8;
+  --color-glico-green: #22c55e;
+  --color-glico-red: #ef4444;
+  --color-glico-indigo: #6366f1;
+}
+
+@layer base {
+  body {
+    @apply bg-glico-dark text-slate-100 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
