@@ -4,7 +4,7 @@ import { supabase } from '../../lib/supabase';
 export function DashboardSteps() {
   const [stepsToday, setStepsToday] = useState(0);
   const [stepGoal, setStepGoal] = useState(10000);
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
 
   useEffect(() => {
     fetchDailyProgress();

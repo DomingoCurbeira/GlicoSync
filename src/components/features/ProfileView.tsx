@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../../lib/supabase';
 import { convertToWebP } from '../../lib/imageUtils';
-import { User, LogOut, Flame, Target, Thermometer, Camera, Save, AtSign, BookOpen } from 'lucide-react';
+import { User, LogOut, Target, Thermometer, Camera, Save, AtSign, BookOpen } from 'lucide-react';
 import { toast } from 'sonner';
 
 export default function ProfileView() {
