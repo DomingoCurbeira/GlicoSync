@@ -4,6 +4,7 @@ import {supabase} from './lib/supabase'
 import GlucoseCard from './components/features/GlucoseCard'
 import Auth from './components/features/Auth';
 import { Toaster } from 'sonner';
+import  {DashboardSteps}  from './components/features/DashboardSteps';
 import StatsView from './components/features/StatsView';
 import ProfileView from './components/features/ProfileView';
 import CommunityView from './components/features/CommunityView';
@@ -71,6 +72,9 @@ export default function App() {
             {(profile?.nombre || 'D').charAt(0).toUpperCase()}
           </div>
       </header>
+      <section className="px-4">
+        <DashboardSteps />
+      </section>
 
       {/* Contenido Principal (Cambiante según la pestaña) */}
       <main className="p-4 max-w-md mx-auto">
